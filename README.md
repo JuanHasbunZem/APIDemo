@@ -1,6 +1,6 @@
-# (Application Name)
+# Currency Exchange (API Demo)
 
-#### (Brief Description of Application)
+#### A quick demonstration of applying API coding to allow the user to convert the currency of US dollars into a different user selected currency.
 
 #### By Juan Hasbun
 
@@ -14,7 +14,8 @@
 * Javascript
 * Jquery
 * Markdown
-* 
+* Node.js
+* Web Pack
 
 ## Description
 
@@ -28,8 +29,7 @@
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* Currently no known bugs.
 
 ## License
 
