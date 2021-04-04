@@ -18,7 +18,7 @@
 * Web Pack
 
 ## Description
-
+Currency image used is by Peter Cade of gettyimages.com
 ## Setup/Installation Requirements
 
 * _This is a great place_
