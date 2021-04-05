@@ -8,31 +8,33 @@
       <h1>US Currency Exchange Convertor</h1>
       <img src="img/currency.jpg" alt="picture of money">
       <br>
-      <p>Enter in US dollars and select the currency you wish to conver to, to find out how much money you have when exchanging currency.</p><br>
+      <p>Enter in US dollars and select the currency you wish to convert, to find out how much money you have when after exchanging currency.</p><br>
     </div>
     <div class="welcomeTwo">
       <form id="exchange">
         <h1>Enter how much you want to convert, in US dollars</h1>
         <div class="form-group">
           <label for="usDollars">US Dollar Amount:</label>
-          <input id="usDollars" class="form-control" type="text">
+          <input id="usDollars" class="form-control" type="number">
         </div>
         <div class="form-group">
           <select class="form-control" id="currencies">
-            <option>Francs</option>
-            <option>Marks</option>
-            <option>Pounds</option>
-            <option>Yen</option>
-            <option>Rupees</option>
-            <option>Won</option>
+            <option value="CHF">Swiss Francs</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">UK Pounds</option>
+            <option value="JPY">Japanese Yen</option>
+            <option value="INR">Indian Rupee</option>
+            <option value="KRW">South Korean Won</option>
           </select>
         </div>
       <button class="btn-success" type="submit">Exchange Money</button>
       </form>
     </div>
     <div class="results">
+      <p>Your <span id=usDollars></span> dollars are worth <span id=convertedMoney></span> of what you selected.</p>
     </div>
     <div class="error">
+      <p>Sorry! <span id="currencyError">Something went wrong with the program. Please try again.</span></p>
     </div>
   </body>
 </html>
