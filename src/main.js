@@ -4,9 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Exchange from 'src/currency.js';
 
-$(document).ready(function(event) {
-  event.preventDefault();
-  $("#exchange").submit(function(event) {
+$(document).ready(function() {
+  $("#formOne").submit(function(event) {
     event.preventDefault();
 
     const dollars = $("input#usDollars").val();
