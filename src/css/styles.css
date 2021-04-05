@@ -1,0 +1,19 @@
+#welcome {
+  text-align: center;
+}
+
+#welcomeTwo {
+  text-align: center;
+}
+
+#results {
+  display: none;
+}
+
+#error {
+  display: none;
+}
+
+#errorTwo {
+  display: none;
+}
