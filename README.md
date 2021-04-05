@@ -18,18 +18,24 @@
 * Web Pack
 
 ## Description
+The website will inform the user to enter a dollar amount and to select (from a drop down menu) a type of currency they wish to convert their US Dollar into. Both of these values are stored in variables and passed to an API call function where they will be used as a template literal within the API call.  The API call will use ExchangeRates pair conversion feature that will convert the US dollar amount to the selected type and return the new amount. This will be passed back to the document (unless an error occurs, in which case an error message is displayed to the user) and displayed in a results page for the user.
+
 Currency image used is by Peter Cade of gettyimages.com
+
+
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+  * Clone from repository (use: $git clone https:github.com/JuanHasbunZem/APIDemo)
+  * Once cloned on to your computer, access with GitBash / terminal
+  * To install Node and Webpack dependencies, enter into the terminal: $ npm install
+  * Once installation is complete, build the program environment with: $ npm run build
+  * Finally, to open the application on a developer server in your browser type: $ npm run start
+    * Note: If running this on a PC, open up the package.json file and find the following line: "start": "npm run build; webpack-dev-server......" replace the "build;" with "build & ".
+
 
 ## Known Bugs
 
-* Currently no known bugs.
+* Currently when attempting to call the API, the currency.js file does not recognize the two variables being passed into the function.
 
 ## License
 
