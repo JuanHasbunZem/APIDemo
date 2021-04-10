@@ -20,7 +20,8 @@
 ## Description
 The website will inform the user to enter a dollar amount and to select (from a drop down menu) a type of currency they wish to convert their US Dollar into. Both of these values are stored in variables and passed to an API call function where they will be used as a template literal within the API call.  The API call will use ExchangeRates pair conversion feature that will convert the US dollar amount to the selected type and return the new amount. This will be passed back to the document (unless an error occurs, in which case an error message is displayed to the user) and displayed in a results page for the user.
 
-Currency image used is by Peter Cade of gettyimages.com
+~~Currency image used is by Peter Cade of gettyimages.com~~
+~~various_money.jpg provided by www.investopedia.com~~
 
 
 ## Setup/Installation Requirements
@@ -35,7 +36,8 @@ Currency image used is by Peter Cade of gettyimages.com
 
 ## Known Bugs
 
-* Currently when attempting to call the API, the currency.js file does not recognize the two variables being passed into the function.
+* ~~Currently when attempting to call the API, the currency.js file does not recognize the two variables being passed into the function.~~
+* Unable to display images, at this time have removed any <img> tags, but saved images in assets folder remains for any future fixes.
 
 ## License
 
