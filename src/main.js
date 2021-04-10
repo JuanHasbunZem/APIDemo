@@ -2,9 +2,13 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Exchange from 'src/currency.js';
+import Exchange from './currency.js';
 
 $(document).ready(function() {
+  $('#results').hide();
+  $('#error').hide();
+  $('#errorTwo').hide();
+
   $("#formOne").submit(function(event) {
     event.preventDefault();
 
@@ -23,7 +27,7 @@ $(document).ready(function() {
           showErrorTwo();
         } else {
           const total = response.conversion_result;
-          showResult(dollars, total);
+          showResult(dollars, total, convertTo);
         }
       })
       .catch(function(error) {
@@ -41,8 +45,9 @@ $(document).ready(function() {
     $("#errorTwo").show();
   }
 
-  function showResult(dollars, total) {
+  function showResult(dollars, total, convertTo) {
     $("#results").show();
-    $(".usDollars").text(dollars);
-    $(".convertedMoney").text(total);
+    $("#inputDollars").text(dollars);
+    $("#currencyType").text(convertTo);
+    $("#convertedMoney").text(total);
   }

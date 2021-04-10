@@ -4,17 +4,16 @@
     <title>US Currency Exchange Convertor</title>
   </head>
   <body>
-    <div class="welcome">
+   <div class="container">
+    <div id="welcome">
       <h1>US Currency Exchange Convertor</h1>
-      <img src="img/currency.jpg" alt="picture of money">
       <br>
-      <p>Enter in US dollars and select the currency you wish to convert, to find out how much money you have when after exchanging currency.</p><br>
+      <p>Enter in the amount of US dollars and select a currency from the drop down menu for the choice you wish to convert. Find out how much money you would have after exchanging currency.</p><br>
     </div>
-    <div class="welcomeTwo">
+    <div id="welcomeTwo">
       <form id="formOne">
-        <h1>Enter how much you want to convert, in US dollars</h1>
         <div class="form-group">
-          <label for="usDollars">US Dollar Amount:</label>
+          <label for="usDollars">Enter how much you want to convert, in US dollars</label>
           <input id="usDollars" class="form-control" type="number">
         </div>
         <div class="form-group">
@@ -30,15 +29,19 @@
       <button class="btn-success" type="submit">Exchange Money</button>
       </form>
     </div>
-    <div class="results">
-      <p>Your <span id=usDollars></span> dollars are worth <span id=convertedMoney></span> of what you selected.</p>
+    <div id="results">
+      <p>Your <span id="inputDollars"> </span> dollars are worth <span id=convertedMoney></span> <span id="currencyType"></span></p>
+      <button type="button" class="btn-primary" onclick="window.location='index.html';">Try Another Currency</button>
     </div>
-    <div class="error">
-      <p>Sorry! Something went wrong with the program. Your Error Message is: <span id=errorMessage></span></p>
+    <div id="error">
+      <p>Sorry! Something went wrong with the program. Your Error Message is:<span id=errorMessage>  </span></p>
+      <button type="button" class="btn-danger" onclick="window.location='index.html';">Try Again.</button>
     </div>
-    <div class="errorTwo">
+    <div id="errorTwo">
       <p>Sorry! The currency you selected is not supported by this site. Please pick another currency type and try again.</p>
+      <button type="button" class="btn-danger" onclick="window.location='confirmation.html';">Try Again.</button>
     </div>
+   </div>
   </body>
 </html>
       
